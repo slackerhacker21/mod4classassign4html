@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 HTML Assignment</title>
+</head>
+
+#css styling for the body tag 
+    
+<style>
+    body {
+        font-family: Ariel, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        paddiing: 0;
+    }
+    form-container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+       # code for the radio group 
+
+        .radio-group {
+            margin-bottom: 15px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+
+        <!-- Message Field -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+
+        <!-- Bonus: How did you find us? -->
+        <div class="radio-group">
+            <label>How did you find us?</label><br>
+            <label><input type="radio" name="find_us" value="Google"> Google</label>
+            <label><input type="radio" name="find_us" value="Social Media"> Social Media</label>
+            <label><input type="radio" name="find_us" value="Friend"> Friend</label>
+            <label><input type="radio" name="find_us" value="Other"> Other</label>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</div>
+  # code for the product table 
+  <title>Product Table</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+      }
+
+      .table-container {
+          width: 70%;
+          margin: 50px auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+
+      th, td {
+          padding: 12px;
+          text-align: center;
+          border: 1px solid #ddd;
+      }
+
+      th {
+          background-color: #4CAF50;
+          color: white;
+      }
+
+      tr:nth-child(even) {
+          background-color: #f2f2f2;
+      }
+
+      tr:hover {
+          background-color: #ddd;
+      }
+  </style>
+</head>
+<body>
+
+<div class="table-container">
+  <h2>Product Table</h2>
+  <table>
+      <!-- Header Row -->
+      <thead>
+          <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+          </tr>
+      </thead>
+      <!-- Table Body -->
+      <tbody>
+          <tr>
+              <td>Wireless Headphones</td>
+              <td>$99.99</td>
+              <td>50</td>
+          </tr>
+          <tr>
+              <td>Smartphone Case</td>
+              <td>$19.99</td>
+              <td>120</td>
+          </tr>
+          <tr>
+              <td>Bluetooth Speaker</td>
+              <td>$59.99</td>
+              <td>75</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+# code for navigation bar & adding images 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar and Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Image Styles */
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .rounded-image {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Images Section -->
+<div class="image-container">
+    <h2>Placeholder Images</h2>
+
+    <!-- First Placeholder Image -->
+    <img src="https://placehold.co/300x200" alt="Placeholder Image 1">
+
+    <br><br>
+# bounes code for rounded second imgage 
+
+    <!-- Second Image with Rounded Border -->
+    <img src="https://placehold.co/300x200" alt="Placeholder Image 2" style="border-radius: 50%;">
+
+</div>
+</body>
+</body>
+</html>
+
